@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -87,12 +87,7 @@
         <p><strong>Your photos are never uploaded, transmitted, or shared.</strong> All image processing (neural network inference, embedding generation, and similarity matching) happens entirely on your device using ONNX Runtime.</p>
 
         <h2>4. On-Device Processing</h2>
-        <p>The App uses the following technologies, all of which run locally on your device:</p>
-        <ul>
-            <li><strong>MobileCLIP S0</strong> — A compact neural network by Apple, running via ONNX Runtime, for generating image and text embeddings</li>
-            <li><strong>SQLite</strong> — Local database for storing photo embeddings (vector representations, not the photos themselves)</li>
-            <li><strong>Google ML Kit Translate</strong> — For offline translation of search queries to English</li>
-        </ul>
+        <p>All core functionalities of the App, including photo analysis and search, are executed entirely on your device. The App relies on on-device machine learning models and local storage to analyze image content and process your search queries without transmitting your photos or text to external servers.</p>
 
         <h2>5. Network Usage</h2>
         <p>The App may use the internet connection <strong>only</strong> for the following purpose:</p>
