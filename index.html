@@ -81,10 +81,10 @@
         <h2>3. Photo Access</h2>
         <p>The App requests permission to access your device's photo gallery solely for the purpose of:</p>
         <ul>
-            <li>Scanning and indexing photos using the on-device MobileCLIP neural network</li>
+            <li>Scanning and indexing photos using on-device neural networks</li>
             <li>Displaying search results within the App</li>
         </ul>
-        <p><strong>Your photos are never uploaded, transmitted, or shared.</strong> All image processing (neural network inference, embedding generation, and similarity matching) happens entirely on your device using ONNX Runtime.</p>
+        <p><strong>Your photos are never uploaded, transmitted, or shared.</strong> All image processing (neural network inference, embedding generation, and similarity matching) happens entirely on your device.</p>
 
         <h2>4. On-Device Processing</h2>
         <p>All core functionalities of the App, including photo analysis and search, are executed entirely on your device. The App relies on on-device machine learning models and local storage to analyze image content and process your search queries without transmitting your photos or text to external servers.</p>
@@ -92,20 +92,20 @@
         <h2>5. Network Usage</h2>
         <p>The App may use the internet connection <strong>only</strong> for the following purpose:</p>
         <ul>
-            <li><strong>Language model download:</strong> Google ML Kit Translate may download a language model (~30 MB) when you first use the search feature in a non-English language (Russian, Ukrainian, or German). This is a one-time download of a machine learning model from Google's servers.</li>
+            <li><strong>Language model download:</strong> The App may download a translation model (~30 MB) when you first use the search feature in a non-English language. This is a one-time download.</li>
         </ul>
         <p><strong>No user content, search queries, photos, or any personal data are ever transmitted over the network.</strong></p>
 
         <h2>6. Data Storage</h2>
         <p>The App stores the following data locally on your device:</p>
         <ul>
-            <li><strong>Photo embeddings</strong> — Numerical vector representations of your photos (not the photos themselves), stored in a local SQLite database</li>
-            <li><strong>ML Kit language models</strong> — Downloaded translation models, managed by Google ML Kit</li>
+            <li><strong>Photo embeddings</strong> — Numerical vector representations of your photos (not the photos themselves), stored in a local database</li>
+            <li><strong>Language models</strong> — Downloaded models for offline translation capabilities</li>
         </ul>
         <p>All locally stored data can be removed by uninstalling the App or clearing the App's data in your device settings.</p>
 
         <h2>7. Third-Party Services</h2>
-        <p>The App uses Google ML Kit Translate for offline translation. Google ML Kit's privacy practices are governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. Note that ML Kit processes translations on-device and does not send your text to Google's servers.</p>
+        <p>The App may utilize third-party translation modules to provide offline support. Their privacy practices are governed by their respective privacy policies. These modules process translations locally and do not send your search queries to external servers.</p>
 
         <h2>8. Children's Privacy</h2>
         <p>The App is not directed at children under the age of 13. We do not knowingly collect any personal information from children.</p>
@@ -115,7 +115,7 @@
         <ul>
             <li><strong>READ_MEDIA_IMAGES</strong> — To access your photo gallery for indexing and search</li>
             <li><strong>ACCESS_MEDIA_LOCATION</strong> — To access photo metadata (not used for location tracking)</li>
-            <li><strong>INTERNET</strong> — For one-time ML Kit language model download</li>
+            <li><strong>INTERNET</strong> — For one-time translation model download</li>
         </ul>
 
         <h2>10. Changes to This Policy</h2>
