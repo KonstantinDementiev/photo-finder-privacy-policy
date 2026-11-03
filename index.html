@@ -116,15 +116,31 @@
         <p>The App is not directed at children under the age of 13. We do not knowingly collect any personal information from children.</p>
 
         <h2>9. Permissions</h2>
-        <p>The App requests the following Android permissions:</p>
+        <p><strong>Permissions you are asked to grant.</strong> Android shows a system dialog for these, and the App works only with your approval:</p>
         <ul>
-            <li><strong>READ_MEDIA_IMAGES</strong> — To access your photo gallery for indexing and search</li>
-            <li><strong>ACCESS_MEDIA_LOCATION</strong> — To access photo metadata (not used for location tracking)</li>
-            <li><strong>INTERNET</strong> — For one-time translation model download, app telemetry, and advertising campaign measurement</li>
+            <li><strong>Photos and media access</strong> (READ_MEDIA_IMAGES and related media permissions) — To read your photo gallery for on-device indexing and search</li>
+            <li><strong>ACCESS_MEDIA_LOCATION</strong> — To read photo metadata (not used for location tracking and never transmitted)</li>
+            <li><strong>Notifications</strong> (POST_NOTIFICATIONS) — To show indexing progress while the App processes photos in the background</li>
+        </ul>
+        <p><strong>Permissions granted automatically by Android at installation.</strong> Android does not ask for these separately:</p>
+        <ul>
+            <li><strong>INTERNET, ACCESS_NETWORK_STATE</strong> — To download the offline translation model (only after you confirm it in the App) and to send anonymous analytics events to Meta</li>
+            <li><strong>com.google.android.gms.permission.AD_ID</strong> and <strong>ACCESS_ADSERVICES_*</strong> — Used by the Meta SDK to read the device advertising identifier and Android advertising measurement APIs for ad attribution</li>
+            <li><strong>BIND_GET_INSTALL_REFERRER_SERVICE</strong> — Used by the Meta SDK to determine which advertising campaign led to the App installation</li>
+            <li><strong>BILLING</strong> — To process the one-time Premium purchase via Google Play</li>
+            <li><strong>FOREGROUND_SERVICE, WAKE_LOCK</strong> — To keep photo indexing running while the screen is off</li>
         </ul>
 
-        <h2>10. GDPR and CCPA Compliance</h2>
-        <p>Because the App does not collect, transmit, or store any personal data, it inherently complies with the data minimization principles set forth by the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). Your right to data erasure can be exercised simply by uninstalling the App, which immediately deletes all locally generated data.</p>
+        <h2>10. Your Choices and Privacy Rights (GDPR, CCPA)</h2>
+        <p><strong>Photos and search queries.</strong> Your photos, search queries, and photo embeddings are processed and stored only on your device. We have no access to them. Uninstalling the App or clearing its data in device settings permanently deletes all of this data.</p>
+        <p><strong>Analytics and advertising data.</strong> The Meta SDK collects your device advertising identifier and technical app events as described in Section 2. Under the EU General Data Protection Regulation (GDPR), an advertising identifier may be considered personal data. We use this data only for app analytics and to measure the performance of our advertising campaigns. We do not sell this data and do not link it to your name, email, photos, or any other information that directly identifies you.</p>
+        <p><strong>How to limit or stop this collection:</strong></p>
+        <ul>
+            <li><strong>Delete or reset your advertising ID</strong> in Android settings (Settings → Privacy → Ads, or Settings → Google → Ads, depending on your device). After deletion, apps can no longer use your advertising identifier.</li>
+            <li><strong>Manage Meta data</strong> received from apps in your Meta account settings ("Your activity off Meta technologies").</li>
+            <li><strong>Uninstall the App</strong> to stop all data collection immediately.</li>
+        </ul>
+        <p><strong>Your rights.</strong> Depending on where you live (for example, in the EU, the UK, or California), you may have the right to access, delete, or object to the processing of your personal data, and to withdraw any consent you have given. Since the App has no user accounts, we cannot identify you from the data stored by Meta. To exercise your rights, contact us using the email below, and you can also contact Meta directly via its <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a> page.</p>
 
         <h2>11. Disclaimers and Limitation of Liability</h2>
         <p><strong>"As Is" Basis:</strong> The App is provided on an "AS IS" and "AS AVAILABLE" basis. We make no warranties, expressed or implied, regarding the App's availability, reliability, or accuracy.</p>
